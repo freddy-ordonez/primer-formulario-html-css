@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Primer Formulario HTML-CSS</title>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <h1 id="title">
+                Survey
+            </h1>
+            <p id="description">
+                I am freddy a system engineering student and this is my first form. This form contains a survey about
+                what kind of animes you like the most.
+                <br>
+                <br>
+                <strong>You can see my projects on my personal <a href="https://github.com/freddy-ordonez" target="_blank">Github.</a></strong>
+            </p>
+
+            <img src="/img/anime.jpg" alt="" class="anime">
+            <form action="" id="survey-form">
+
+                <label for="name" id="name-label">Name</label>
+                <input type="text" id="name" placeholder="Name" required>
+
+                <label for="email" id="email-label">Email</label>
+                <input type="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Email"
+                    required>
+
+                <label for="number" id="number-label">Number</label>
+                <input type="number" id="number" min="10000000" placeholder="Number" required>
+
+                <label for="dropdown" id="number-label">Genre Like</label>
+                <select name="dropdown" id="dropdown" required>
+                    <option value="Shounen">Shounen</option>
+                    <option value="Yao">Yao</option>
+                    <option value="Yuri">Yuri</option>
+                    <option value="Action">Action</option>
+                    <option value="Sports">Sports</option>
+                    <option value="Josei">Josei</option>
+                    <option value="Seinen">Seinen</option>
+                </select>
+
+                <hr>
+
+                <label for="" class="notify">Send more survey later</label>
+
+                <label for="option-yes" class="yes">Yes</label>
+                <input type="radio" name="option" id="option-yes" value="true">
+                <label for="option-not" class="not">Not</label>
+                <input type="radio" id="option-not" name="option" value="false">
+
+                <br>
+
+                <label for="" class="conditions">Terms and Conditions</label>
+
+                <label for="" class="acept">Acept</label>
+                <input type="checkbox" name="conditions" value="acept" disabled>
+
+                <label for="" class="degree">Degree</label>
+                <input type="checkbox" name="conditions" value="degree">
+
+                <label for="comentary" id="label-comentary">Comentary</label>
+                <textarea name="" id="comentary" cols="30" rows="10"></textarea>
+
+                <input type="submit" id="submit">
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
